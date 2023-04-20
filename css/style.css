@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+h1 {
+  text-align: center;
+  font-family: "Satisfy", cursive;
+}
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 0px 90px 0px;
+}
+
+#tarefas {
+  display: flex;
+  justify-content: space-around;
+}
+#tarefas #urgente,
+#tarefas #normal,
+#tarefas #sobra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+#tarefas #urgente h3,
+#tarefas #normal h3,
+#tarefas #sobra h3 {
+  color: white;
+  width: 360px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 50px 50px 50px 0px;
+}
+#tarefas #urgente .tarefaU, #tarefas #urgente .tarefaN, #tarefas #urgente .tarefaS,
+#tarefas #normal .tarefaU,
+#tarefas #normal .tarefaN,
+#tarefas #normal .tarefaS,
+#tarefas #sobra .tarefaU,
+#tarefas #sobra .tarefaN,
+#tarefas #sobra .tarefaS {
+  display: flex;
+  width: 360px;
+  column-gap: 6px;
+  align-items: center;
+}
+#tarefas #urgente .tarefaU .text, #tarefas #urgente .tarefaN .text, #tarefas #urgente .tarefaS .text,
+#tarefas #normal .tarefaU .text,
+#tarefas #normal .tarefaN .text,
+#tarefas #normal .tarefaS .text,
+#tarefas #sobra .tarefaU .text,
+#tarefas #sobra .tarefaN .text,
+#tarefas #sobra .tarefaS .text {
+  display: flex;
+  border-bottom: thin solid #000000;
+  height: 28px;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 25px;
+  list-style: none;
+  font-family: "Satisfy", cursive;
+}
+#tarefas #urgente .tarefaU img, #tarefas #urgente .tarefaN img, #tarefas #urgente .tarefaS img,
+#tarefas #normal .tarefaU img,
+#tarefas #normal .tarefaN img,
+#tarefas #normal .tarefaS img,
+#tarefas #sobra .tarefaU img,
+#tarefas #sobra .tarefaN img,
+#tarefas #sobra .tarefaS img {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+#tarefas #urgente .check,
+#tarefas #normal .check,
+#tarefas #sobra .check {
+  width: 20px;
+  height: 20px;
+}
+#tarefas #urgente .check:checked + .text,
+#tarefas #normal .check:checked + .text,
+#tarefas #sobra .check:checked + .text {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.4745098039);
+}
+
+@media screen and (max-width: 1007px) {
+  #tarefas {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+}
+@media screen and (max-width: 637px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 388px) {
+  h3 {
+    color: white;
+    width: 95% !important;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 0px !important;
+  }
+  .tarefaU, .tarefaN, .tarefaS {
+    width: 95% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
