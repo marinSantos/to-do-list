@@ -41,7 +41,7 @@ async function renderizarTarefa(ev) {
 
         let tarefa = document.createElement('div')
         tarefa.className ='tarefaN'
-        tarefa.innerHTML = `<input  class="check" type="checkbox"><li class="text">${inputAdd.value}</li><img  class="remover" src="imagens/x-lg.png" alt="" onclick="removerTarefa(parentElement)">`
+        tarefa.innerHTML = `<input  class="check" type="checkbox"><li class="text">${result}</li><img  class="remover" src="imagens/x-lg.png" alt="" onclick="removerTarefa(parentElement)">`
 
         normal.appendChild(tarefa)
         inputAdd.value = ''
@@ -50,7 +50,7 @@ async function renderizarTarefa(ev) {
 
         let tarefa = document.createElement('div')
         tarefa.className ='tarefaS'
-        tarefa.innerHTML = `<input class="check" type="checkbox"><li class="text">${inputAdd.value}</li><img class="remover" src="imagens/x-lg.png" alt="" onclick="removerTarefa(parentElement)">`
+        tarefa.innerHTML = `<input class="check" type="checkbox"><li class="text">${result}</li><img class="remover" src="imagens/x-lg.png" alt="" onclick="removerTarefa(parentElement)">`
 
         sobra.appendChild(tarefa)
         inputAdd.value = ''
